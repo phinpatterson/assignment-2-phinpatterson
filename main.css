@@ -30,6 +30,20 @@ nav a:hover {
     text-decoration: underline; /* simple hover effect */
 }
 
+section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    gap: 20px; /* spacing between boxes */
+    margin: 20px 0;
+}
+
+section div {
+    border: 2px solid black; /* make the border stand out */
+    padding: 15px;
+    border-radius: 8px; /* optional rounded corners */
+    background-color: #f9f9f9; /* light background so text pops */
+}
+
 @media only screen and (min-width: 400px) { /* mobile device text wrap */
     header {
         flex-direction: row;
