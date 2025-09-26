@@ -1,15 +1,21 @@
-header{
+header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-weight: bold;
-    background-color: rgb(3, 3, 107);
+    background-color: rgb(1, 1, 130);
     padding: 10px 20px;
     color: white;
 }
 
-header h2{
+header .logo {
+    width: 40px;   /* adjust size */
+    height: 40px;  /* keep square for icons */
+    margin-right: 10px; /* space between logo and Welcome */
+}
+
+header h2 {
     margin: 0;
+    margin-right: auto; /* push nav all the way to the right */
 }
 
 nav ul { /* for navigational hyperlinks */
