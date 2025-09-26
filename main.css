@@ -3,7 +3,7 @@ header{
     align-items: center;
     justify-content: space-between;
     font-weight: bold;
-    background-color: blue;
+    background-color: rgb(3, 3, 107);
     padding: 10px 20px;
     color: white;
 }
@@ -32,7 +32,6 @@ nav a:hover {
 
 section {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 columns */
     gap: 20px; /* spacing between boxes */
     margin: 20px 0;
 }
@@ -43,9 +42,41 @@ section div {
     border-radius: 8px; /* optional rounded corners */
     background-color: #f9f9f9; /* light background so text pops */
 }
+main {
+    max-width: 100%; /* allow full width */
+    margin: 0 auto;
+    padding: 20px;
+}
+article p {
+    margin-bottom: 1em; /* spacing between paragraphs */
+}
 
 @media only screen and (min-width: 400px) { /* mobile device text wrap */
     header {
         flex-direction: row;
     }
 }
+
+footer {
+    display: flex;
+    align-items: center;        
+    justify-content: space-between; 
+    padding: 10px 20px;          
+}
+
+footer aside {
+    margin: 0; /* no spacing */
+    padding: 0;
+}
+
+footer aside ul {
+    list-style-type: disc;
+    margin: 0;
+    padding-left: 20px; /* keep bullets visible */
+}
+
+footer section {
+    margin: 0;
+    max-width: 50%; /* prevents text from stretching too wide */
+}
+
